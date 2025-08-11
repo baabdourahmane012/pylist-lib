@@ -66,6 +66,42 @@ public class PyList<T> implements Iterable<T>
     }
 
     /**
+     * Modifie un élément à la position spécifiée dans cette liste.
+     *
+     * @param index L'indice de l'élément à modifier.
+     * @param val L'élément à ajouter.
+     */
+    public void set(int index, T val){
+        PyList<T> newList = new PyList<>();
+        for(int i=0; i<this.len(); i++){
+            if (i != index){
+                newList.append(this.get(i));
+            } else {
+                newList.append(val);
+            }
+        }
+        this.data = newList.data;
+    }
+
+    /**
+     * Insére un élément à la position spécifiée dans cette liste.
+     *
+     * @param index L'indice à laquel insérer l'élément.
+     * @param val L'élément à insérer.
+     */
+    public void insert(int index, T val){
+        PyList<T> newList = new PyList<>();
+        for (int i = 0; i <= this.len(); i++) {
+            if (i<index){
+               newList.append(this.get(i));
+            } else {
+                newList.append(val);
+            }
+        }
+        this.data = newList.data;
+    }
+
+    /**
      * Retourne le nombre d'éléments dans cette liste.
      *
      * @return Le nombre d'éléments dans la liste.
