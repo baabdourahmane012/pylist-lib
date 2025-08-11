@@ -9,8 +9,6 @@ Une librairie légère et facile à utiliser qui apporte les fonctionnalités de
 
 ## Fonctionnalités
 
--   ### **Fonctionnalités 🚀**
-
 - **`append(element)`** : Ajoute un élément à la fin de la liste.
 - **`get(index)`** : Récupère un élément par son index. Lève une `IndexOutOfBoundsException` si l'index est hors de la plage.
 - **`len()`** : Retourne la taille de la liste.
