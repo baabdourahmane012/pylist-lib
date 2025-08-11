@@ -9,15 +9,19 @@ Une librairie légère et facile à utiliser qui apporte les fonctionnalités de
 
 ## Fonctionnalités
 
--   **`append()`**: Ajoute un élément à la fin de la liste.
--   **`get()`**: Récupère un élément par son index.
--   **`len()`**: Retourne la taille de la liste.
--   **`slice()`**: Extrait une sous-liste de manière intuitive.
--   **`filter()`**: Filtre les éléments de la liste avec un prédicat.
--   **`pop()`**: Retire et retourne le dernier élément.
--   **`sort()`**: Trie la liste selon l'ordre naturel ou un comparateur.
--   **`reversed()`**: Retourne une nouvelle liste dans l'ordre inverse.
+-   ### **Fonctionnalités 🚀**
 
+- **`append(element)`** : Ajoute un élément à la fin de la liste.
+- **`get(index)`** : Récupère un élément par son index. Lève une `IndexOutOfBoundsException` si l'index est hors de la plage.
+- **`len()`** : Retourne la taille de la liste.
+- **`slice(from, to)`** : Extrait une sous-liste de manière intuitive. Lève une `IndexOutOfBoundsException` si l'index est hors de la plage.
+- **`filter(predicate)`** : Filtre les éléments de la liste avec un prédicat.
+- **`pop()`** : Retire et retourne le dernier élément. Lève une `NoSuchElementException` si la liste est vide.
+- **`sort()`** : Trie la liste selon l'ordre naturel des éléments.
+- **`sort(comparator)`** : Trie la liste selon un comparateur spécifié.
+- **`reversed()`** : Retourne une nouvelle liste dont les éléments sont dans l'ordre inverse.
+- **`insert(index, element)`** : Insère un nouvel élément à la position spécifiée, décalant les éléments suivants. Lève une `IndexOutOfBoundsException` si l'index est hors de la plage.
+- **`set(index, element)`** : Remplace l'élément à la position spécifiée. Lève une `IndexOutOfBoundsException` si l'index est hors de la plage.
 ---
 
 ## Installation
